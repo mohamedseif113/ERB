@@ -1,0 +1,200 @@
+
+@font-face {
+  font-family: "albayan";
+  src: local("albayan"),
+   url("../src/fonts/alfont_com_AlFont_com_AraAlBayan-Bold.otf") format("truetype");
+  font-weight: bold;
+  }
+body {
+  margin: 0;
+  font-family: "albayan" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "albayan" !important;
+
+}
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+  background-position: center;
+}
+
+form{
+    background-color: white;
+    padding: 0px 60px;
+    border-radius: 10px;
+}
+
+h1{
+    color: rgb(77, 1, 77);
+    text-align: center;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.home {
+  text-align: center;
+}
+.home button {
+  background-color: #00408a;
+  border: #00408a;
+  border-radius: 15px;
+}
+.home-page .row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+.home h6 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 25px;
+  color: #00408a;
+}
+.formInput{
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+input{
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+
+label{
+  font-size: 12px;
+  color: gray;
+}
+
+span{
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+
+input:invalid[focused="true"]{
+  border: 1px solid red;
+}
+
+input:invalid[focused="true"] ~ span{
+  display: block;
+}
+
+
+
+/* slider slick */
+
+
+.slick-dots ul {
+  background-color: red !important;
+}
+
+
+.slick-dots li {
+  width: 60px !important;
+  height: 60px !important;
+   margin-right: 4px !important;
+  
+   background-position: center
+   ;
+   background-size: 100% 100%;
+  /* background-color: red !important; */
+  border-radius: 50%;
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 60px !important;
+  line-height: 20px;
+  position: absolute;
+  top: 40% !important;
+  left: 0;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: transparent !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.card-body {
+  padding: 0;
+}
+
+.slick-slider{
+    z-index: 12 !important; 
+}
+/* .control{
+  position: absolute;
+  top:0;
+  left:0;
+
+} */
+.bottons-control-next,
+.bottons-control-prev {
+
+border: none;
+background-color: transparent;
+  position: absolute;
+  top: 45%;
+}
+
+.bottons-control-next i,
+.bottons-control-prev i {
+  color: white;
+  font-size: 46px;
+  transition: all 0.6s;
+}
+
+.bottons-control-next {
+
+  left: 3%;
+  z-index: 101;
+}
+
+.bottons-control-prev {
+ 
+  right: 3%;
+  z-index: 101;
+}
+
+.slick-dots {
+  bottom: 7% !important;
+
+}
+
+
+
+/* end of slick slider  */
+
+
